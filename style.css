@@ -152,7 +152,8 @@ header .search button {
     margin-bottom: 30px;
 }
 
-.content .separator a {
+.content .separator a,
+.content .articles .item .bottom a {
     display: flex;
     align-items: center;
     gap: 2px;
@@ -160,7 +161,8 @@ header .search button {
     font-size: 14px;
 }
 
-.content .separator a i {
+.content .separator a i,
+.content .articles .item .bottom a i {
     font-size: 18px;
 }
 
@@ -181,7 +183,9 @@ header .search button {
 .content .courses .item .top,
 .content .courses .item .bottom,
 .content .podcasts .item .top,
-.content .podcasts .item .bottom {
+.content .podcasts .item .bottom,
+.content .articles .item .top,
+.content .articles .item .bottom {
     display: flex;
     gap: 10px;
     background-color: #fff;
@@ -216,7 +220,8 @@ p {
 }
 
 .content .courses .item .bottom,
-.content .podcasts .item .bottom {
+.content .podcasts .item .bottom,
+.content .articles .item .bottom {
     border-radius: none;
     justify-content: space-between;
     border-top: 1px dashed #888;
@@ -230,7 +235,8 @@ p {
 
 .content .courses .item .bottom h5.tag,
 .content .courses .item .bottom .discount>h5,
-.content .podcasts .item .bottom h5 {
+.content .podcasts .item .bottom h5,
+.content .articles .item .bottom h5 {
     font-weight: 500;
     background-color: #fff2b2;
     color: #db7c26;
@@ -241,7 +247,8 @@ p {
 
 .content .courses .item .bottom h5.tag span,
 .content .courses .item .bottom .discount>h5 span,
-.content .podcasts .item .bottom .discount {
+.content .podcasts .item .bottom h5 span,
+.content .articles .item .bottom h5 span {
     font-weight: bold;
 }
 
@@ -349,4 +356,29 @@ p {
 .content .podcasts .item .bottom .duration h5 {
     background-color: #ede0d4;
     color: #9c6644;
+}
+
+/* Articles styles */
+.content .articles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.content .articles .item {
+    width: 23%;
+}
+
+.content .articles .item .top {
+    flex-direction: column;
+}
+
+.content .articles .item .top img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
 }
